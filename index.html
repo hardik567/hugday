@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug Day Surprise for my babudi 🤗💖</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #FFC0CB; /* Light Pink */
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            font-size: 28px;
+            color: #d63384;
+            margin-top: 30px;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .teddy {
+            font-size: 100px;
+            cursor: pointer;
+            transition: transform 0.4s ease-in-out;
+        }
+        .message {
+            font-size: 20px;
+            font-weight: bold;
+            color: #6d214f;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .hugged .teddy {
+            transform: scale(1.2);
+        }
+        .hugged .message {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🤗 Baby Hug Day Special For youuuuuuuuu! 💖</h1>
+
+    <div class="container" onclick="giveHug()">
+        <div class="teddy">🧸</div>
+        <div class="message">If I could, I’d wrap you in a never-ending hug, so you'd always feel my love. </br> But since I can’t be there right now, here’s a virtual squeeze tight, warm, and full of love! 🤗💖</div>
+    </div>
+
+    <script>
+        function giveHug() {
+            document.querySelector('.container').classList.toggle('hugged');
+        }
+    </script>
+
+</body>
+</html>
